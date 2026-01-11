@@ -25,7 +25,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/KEISHISAKHI">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/login" element={<Login />} />
@@ -40,7 +40,6 @@ const App = () => (
           <Route path="/soil-health" element={<SoilHealth />} />
           <Route path="/crop-advisory" element={<CropAdvisory />} />
           <Route path="/fertilizer-assistant" element={<FertilizerAssistant />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
